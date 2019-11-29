@@ -1,0 +1,9 @@
+Advance Seven Limited has released under GPL this plugin
+for Wireshark. It decodes the protocol used by their
+TraceMatcher TmSyncro package.
+
+The plugin decodes the communication protocol, but not any
+vehicle network messages.
+
+Information can be found at http://www.tribelab.com/
+The author is Paul Offord <paul.offord@advance7.com>
