@@ -1,9 +1,1 @@
-Advance Seven Limited has released under GPL this plugin
-for Wireshark. It decodes the protocol used by their
-TraceMatcher TmSyncro package.
-
-The plugin decodes the communication protocol, but not any
-vehicle network messages.
-
-Information can be found at http://www.tribelab.com/
-The author is Paul Offord <paul.offord@advance7.com>
+Syncro: Program access to plugin_if via TCP This plugin allows the loose coupling of a process to Wireshark. The coupling is achieved through a TCP connection from the process to Wireshark. This can be a local TCP connection (via the localhost interface) or a remote connection. A default parameter setting restricts the connection to one made via localhost. Syncro provides a small TCP server running on a separate thread within Wireshark. This server accepts TCP connections from one or more external processes (programs). Once the connection is made, Syncro accepts commands (GotoFrame and ApplyFilter) from the client process, sends responses to the commands and generates events for asynchronous actions such as moving within the trace file. 
